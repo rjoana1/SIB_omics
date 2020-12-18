@@ -1,7 +1,7 @@
 # SIB_omics
 Análise de datasets de expressão relacionados com Covid19
 
-## 1. Download dos files directamente da página do NCBI e recurso ao package pandas.
+## Package pandas, download dos files directamente da página do NCBI
 - tabelas de counts (19472 rows × 126 columns):
 
 rna_seq_tmp = pd.read_csv("GSE157103_genes.tpm.tsv", sep='\t', index_col = 0)
