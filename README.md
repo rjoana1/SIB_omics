@@ -1,46 +1,40 @@
-# SIB_omics
-Análise de datasets de expressão relacionados com Covid19
+# 1. Análise de datasets de expressão relacionados com Covid19
 
-## Package pandas, download dos files directamente da página do NCBI
-- tabelas de counts (19472 rows × 126 columns):
+## 1.1. Objetivos principais/ questões motivadoras
 
-rna_seq_tmp = pd.read_csv("GSE157103_genes.tpm.tsv", sep='\t', index_col = 0)
+### 1.1.1. COVID-19 molecular landscape and factors associated with higher severity
 
-- leitura do ficheiro soft com informação sobre o dataset:
+### 1.1.2. Gain biological insight into the host’s response to SARSCoV-2 and pathways influencing its severity
 
-soft = pd.read_csv("GSE157103_family.soft", sep='\t', index_col = 0)
+### 1.1.3. Biological Processes Dysregulated in COVID-19 Patients
 
-- upload dos metadados (SraRunTable.txt; 252 rows × 37 columns):
+## 1.2. Dataset
+- Groups:
+    - 102 COVID-19 and 26 non-COVID-19 patient samples
+    - Intensive Care Unit (ICU) and Non-ICU patients
 
-metadados = pd.read_csv("SraRunTable.txt", sep=',', index_col = 0)
+### 1.2.1. Leukocyte mRNA expression dataset: GEO: GSE157103
+    - RNA-seq
+    - 13263 transcripts
 
-Aqui estavamos à espera de 126 amostras, temos 252 SRR samples e 37 colunas de metadados.
+## 1.3. Pipeline
 
-## Package GEOparse
+## 1.4. Methods
 
-- GEO objects; class GEOparse.BaseGEO
-- main attributes: name and metadata
-- metadata is a dictionary of useful information about samples which occurs in the SOFT file with bang (!) in the beginning.
-  - each value of this dictionary id a list (even with one element).
+### 1.4.1. COVID-19 molecular landscape and factors associated with higher severity
+    - PCA; grouping of patient samples based on severity (HFD-45); grouping based on status (COVID-19 versus non-COVID-19)
+### 1.4.2. Gain biological insight into the host’s response to SARSCoV-2 and pathways influencing its severity
+    - supervised analysis: univariate and multivariate regression to identify features that associate with
+    (1) COVID-19 status
+    (2) HFD-45
+    - Significant changes in biomarkers ferritin (ng/ml),crp (mg/l),ddimer (mg/l_feu), procalcitonin (ng/ml), lactate (mmol/l)', fibrinogen associated with COVID-19.
+        - determined by ANOVA and log-likelihood ratio tests, incorporation of potentially confounding variables, such as sex, age, and ICU status
+    - GO and molecular class enrichment analysis
+### 1.4.3. Biological Processes Dysregulated in COVID-19 Patients
+    - mean fold-change in abundance of GO-associated transcripts, plotted against adjusted p values of significance with COVID-19
 
-gse157103 = GEOparse.get_GEO("GSE157103")
+## 1.5. Preliminary results
 
-- metadados referentes às 126 amostras:
+## 1.6. Next steps
 
-gse157103.phenotype_data (126 rows × 61 columns)
-
-- matrizes de contagens: gsm.table vazia:
-
-for gsm_name, gsm in gse157103.gsms.items():
-  print(gsm_name,"--", gsm)
-  print("metadata: \n",gsm.metadata)
-  for key, value in gsm.metadata.items():
-   print("gsm.metadata.items \n",key, value)
-   print("Table data:",gsm)
-   print(gsm.columns)
-
-## R, library GEOquery
-
-- metadados (126x83)
-
-Surpreendentemente obtivemos mais metadados, 83.
+## 1.7. References
