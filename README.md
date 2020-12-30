@@ -2,11 +2,13 @@
 
 ## 1.1. Objetivos principais/ questões motivadoras
 
-### 1.1.1. COVID-19 molecular landscape and factors associated with higher severity
-
-### 1.1.2. Gain biological insight into the host’s response to SARSCoV-2 and pathways influencing its severity
-
-### 1.1.3. Biological Processes Dysregulated in COVID-19 Patients
+A apresentação clínica da infecção por COVID-19 é muito diversa, podendo variar de um estado assimtomático para uma condição letal. Dados recentes indicam que a severidade da doença depende, para além de factores virais, de factores associados ao hospedeiro.
+O objectivo deste trabalho consiste em tentar compreender melhor respostas individuais, a nível molecular, que possam explicar as diferenças clínicas observadas.
+Para tal, recorreu-se a um dataset composto por dados clínicos de 128 doentes com e sem diagnóstico de COVID-19. Adicionalmente, dados de RNA-sequencing provenientes de amostras de sangue recolhidas destes doentes foram usados para criar profiles moleculares de cada doente. 
+Pretende-se, neste trabalho, responder concretamente às seguintes questões:
+- Severidade da apresentação clínica e sua associação com um perfil molecular COVID
+- Biological pathways associados à resposta do hospediro ao SARSCoV-2 e à severidade da doença
+- Processo biologicos desregulados em doentes COVID-19
 
 ## 1.2. Dataset
 - Groups:
@@ -21,8 +23,9 @@
 
 ## 1.4. Methods
 
+
 ### 1.4.1. COVID-19 molecular landscape and factors associated with higher severity
-    - PCA; grouping of patient samples based on severity (HFD-45); grouping based on status (COVID-19 versus non-COVID-19)
+    - PCA; agrupamento de amostras de doentes baseado na severidade da doença (score HFD-45) e estado (COVID-19 versus non-COVID-19)
 ### 1.4.2. Gain biological insight into the host’s response to SARSCoV-2 and pathways influencing its severity
     - supervised analysis: univariate and multivariate regression to identify features that associate with
     (1) COVID-19 status
