@@ -31,7 +31,7 @@ Medições provenientes de análises laboratoriais: (verificar se estão todos e
 - procalcitonina, xxx;
 - fibrinogénio, xxx.
 
-Dados de expressão normalizados (TMP) provenientes de RNA-sequencing (Illumina NovaSeq6000) de amostras de sangue destes doentes. A existência de um número de amostras inferior ao número de doentes (124) deve-se, provavelmente, à exclusão de duas amostras por falta de qualidade.
+Dados de expressão normalizados (TPM) provenientes de RNA-sequencing (Illumina NovaSeq6000) de amostras de sangue destes doentes. A existência de um número de amostras inferior ao número de doentes (124) deve-se, provavelmente, à exclusão de duas amostras por falta de qualidade.
 
 ## 1.3. Pipeline
 
