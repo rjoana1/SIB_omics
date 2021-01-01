@@ -30,8 +30,10 @@ Medições provenientes de análises laboratoriais: (verificar se estão todos e
 - lactato, xxx;
 - procalcitonina, xxx;
 - fibrinogénio, xxx.
+O acesso a estes dados foi conseguido através do package em pyhton GEOparse (https://pypi.org/project/GEOparse/).
 
 Dados de expressão normalizados (TPM) provenientes de RNA-sequencing (Illumina NovaSeq6000) de amostras de sangue destes doentes. A existência de um número de amostras inferior ao número de doentes (124) deve-se, provavelmente, à exclusão de duas amostras por falta de qualidade.
+A matrix de contagem de genes por amostra foi downloaded directamente do site GEO (ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE157nnn/GSE157103/suppl/GSE157103%5Fgenes%2Etpm%2Etsv%2Egz).
 
 ## 1.3. Pipeline
 
