@@ -12,6 +12,7 @@ Pretende-se, neste trabalho, responder concretamente às seguintes questões:
 
 ## 1.2. Dataset
 O dataset utilizado encontra-se disponível na base de dados GEO com o número de acesso GSE157103. Consiste em dados clínicos recolhidos de 102 doentes com diagnóstico COVID-19 e 26 doentes com dificuldades respiratórias sem diagnóstico COVID-19. Fazem parte deste conjunto de dados, medições provenientes de análises laboratoriais e genómicas realizadas a amostras de sangue recolhidas destes doentes.
+
 Dos dados clínicos disponíveis fazem parte as seguintes variáveis:
 - necessida de internamento em unidade de cuidados intensivos (IUC);
 - 4 scores de severidade da apresentação clínica da doença:
@@ -20,6 +21,7 @@ Dos dados clínicos disponíveis fazem parte as seguintes variáveis:
     - sequential organ failure assessment (SOFA);
     - Charlson comorbidity index;
 - número de dias ligado a ventilação mecânica;
+
 Medições provenientes de análises laboratoriais:
 (verificar se estão todos e descrever sumariamente importancia)
     -C-reactive protein (CRP), xxx ;
@@ -28,6 +30,7 @@ Medições provenientes de análises laboratoriais:
     - lactato, xxx;
     - procalcitonina, xxx;
     - fibrinogénio, xxx.
+
 Dados de expressão normalizados (TMP) provenientes de RNA-sequencing (Illumina NovaSeq6000) de amostras de sangue destes doentes. A existência de um número de amostras inferior ao número de doentes (124) deve-se, provavelmente, à exclusão de duas amostras por falta de qualidade.
 
 ## 1.3. Pipeline
