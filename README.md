@@ -2,8 +2,8 @@
 
 ## 1.1. Objetivos principais/ questões motivadoras
 
-A apresentação clínica da infecção por COVID-19 é muito diversa, podendo variar de um estado assimtomático para uma condição letal. Dados recentes indicam que a severidade da doença depende, para além de factores virais, de factores associados ao hospedeiro.
-O objectivo deste trabalho consiste em tentar compreender melhor respostas individuais, a nível molecular, que possam explicar as diferenças clínicas observadas.
+A apresentação clínica da infecção por COVID-19 é muito diversa, podendo variar de um estado assimtomático para uma condição letal. Dados recentes indicam que a severidade da doença depende, para além de factores virais, de factores associados ao hospedeiro. Diferentes assinaturas genéticas, patologicas e clínicas parecem conseguir diferenciar doentes com diagnóstico de COVID-19 e doentes sem esta condição.
+O objectivo deste trabalho consiste em tentar compreender melhor respostas individuais, a nível molecular, que possam explicar estas diferenças clínicas observadas.
 Para tal, recorreu-se a um dataset composto por dados clínicos de 128 doentes com e sem diagnóstico de COVID-19. Adicionalmente, dados de RNA-sequencing provenientes de amostras de sangue recolhidas destes doentes foram usados para criar profiles moleculares de cada doente. 
 Pretende-se, neste trabalho, responder concretamente às seguintes questões:
 - Severidade da apresentação clínica e sua associação com um perfil molecular COVID
