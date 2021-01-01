@@ -14,6 +14,7 @@ Pretende-se, neste trabalho, responder concretamente às seguintes questões:
 O dataset utilizado encontra-se disponível na base de dados GEO com o número de acesso GSE157103. Consiste em dados clínicos recolhidos de 102 doentes com diagnóstico COVID-19 e 26 doentes com dificuldades respiratórias sem diagnóstico COVID-19. Fazem parte deste conjunto de dados, medições provenientes de análises laboratoriais e genómicas realizadas a amostras de sangue recolhidas destes doentes.
 
 Dos dados clínicos disponíveis fazem parte as seguintes variáveis:
+
 - necessida de internamento em unidade de cuidados intensivos (IUC);
 - 4 scores de severidade da apresentação clínica da doença:
     - hospital-free days at day 45 (HDF-45), em que é atribuido um score com valor zero a doentes que permaneceram internados mais de 45 dias ou morreram durante a sua estadia no hospital, e valores de score mais elevados a doentes com internamentos hospitalares de menor duração e severidade da doença menor;
@@ -23,8 +24,10 @@ Dos dados clínicos disponíveis fazem parte as seguintes variáveis:
 - número de dias ligado a ventilação mecânica;
 
 Medições provenientes de análises laboratoriais:
+
 (verificar se estão todos e descrever sumariamente importancia)
-    -C-reactive protein (CRP), xxx ;
+
+-C-reactive protein (CRP), xxx ;
     -D-dimer, um marcador da degradação do fibrinogénio;
     - ferritina, xxx;
     - lactato, xxx;
