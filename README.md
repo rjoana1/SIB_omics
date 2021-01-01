@@ -6,9 +6,12 @@ A apresentação clínica da infecção por COVID-19 é muito diversa, podendo v
 O objectivo deste trabalho consiste em tentar compreender melhor respostas individuais, a nível molecular, que possam explicar estas diferenças clínicas observadas.
 Para tal, recorreu-se a um dataset composto por dados clínicos de 128 doentes com e sem diagnóstico de COVID-19. Adicionalmente, dados de RNA-sequencing provenientes de amostras de sangue recolhidas destes doentes foram usados para criar profiles moleculares de cada doente. 
 Pretende-se, neste trabalho, responder concretamente às seguintes questões:
+- Caracterização do fenótipo de hipercoagulação caracteristicos de doentes com diagnóstico COVID-19 (D-dimer, marcador da degradação do fibrinogénio)
+- Correlação entre a abundândia de biomarcadores com dados clínicos e outcome de pacientes com diagnóstico de COVD-19
 - Severidade da apresentação clínica e sua associação com um perfil molecular COVID
 - Biological pathways associados à resposta do hospediro ao SARSCoV-2 e à severidade da doença
-- Processo biologicos desregulados em doentes COVID-19
+- Análise dos processo biologicos desregulados em doentes COVID-19
+- modelo preditivo da severidade e outcome de pacientes com diagnóstico de COVID-19 baseado em dados omicos
 
 ## 1.2. Dataset
 - Groups:
