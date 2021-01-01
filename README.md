@@ -2,22 +2,22 @@
 
 ## 1.1. Objetivos principais/ questões motivadoras
 
-A apresentação clínica da infecção por COVID-19 é muito diversa, podendo variar de um estado assimtomático para uma condição letal. Dados recentes indicam que a severidade da doença depende, para além de factores virais, de factores associados ao hospedeiro. Diferentes assinaturas genéticas, patologicas e clínicas parecem conseguir diferenciar doentes com diagnóstico de COVID-19 e doentes sem esta condição.
-O objectivo deste trabalho consiste em tentar compreender melhor respostas individuais, a nível molecular, que possam explicar estas diferenças clínicas observadas.
-Para tal, recorreu-se a um dataset composto por dados clínicos de 128 doentes com e sem diagnóstico de COVID-19. Adicionalmente, dados de RNA-sequencing provenientes de amostras de sangue recolhidas destes doentes foram usados para criar profiles moleculares de cada doente. 
+A apresentação clínica da infecção por COVID-19 é muito diversa, podendo variar de um estado assimtomático para uma condição letal (ref). Dados recentes indicam que a severidade da doença depende, para além de factores virais, de factores associados ao hospedeiro (ref). Diferentes assinaturas genéticas, patologicas e clínicas parecem conseguir diferenciar doentes com diagnóstico de COVID-19 e doentes sem esta condição (ref).
+O objectivo deste trabalho consiste em tentar compreender melhor respostas individuais, a nível molecular, que possam explicar estas diferenças clínicas observadas. Adicionalmente, pretende-se criar um modelo de machine learning que permita prever a severidade da infecção COVID-19 com base em dados omicos, fisiológicos e clínicos.
+Para tal, recorreu-se a um dataset composto por diversos dados clínicos pertencentes a 128 doentes, com e sem diagnóstico de COVID-19. Adicionalmente, foram utilizados dados de RNA-sequencing e dados laboratoriais provenientes de amostras de sangue recolhidas destes doentes.
 Pretende-se, neste trabalho, responder concretamente às seguintes questões:
-- Caracterização do fenótipo de hipercoagulação caracteristicos de doentes com diagnóstico COVID-19 (D-dimer, marcador da degradação do fibrinogénio)
-- Correlação entre a abundândia de biomarcadores com dados clínicos e outcome de pacientes com diagnóstico de COVD-19
-- Severidade da apresentação clínica e sua associação com um perfil molecular COVID
-- Biological pathways associados à resposta do hospediro ao SARSCoV-2 e à severidade da doença
-- Análise dos processo biologicos desregulados em doentes COVID-19
-- modelo preditivo da severidade e outcome de pacientes com diagnóstico de COVID-19 baseado em dados omicos
+- Dterminar a existência de associação entre biomarcadores ou perfil molecular com diagnóstico de COVD-19 e severidade da apresentação clínica por forma a compreender que factores estão associados a uma maior severidade da apresentação clínivca desta doença;
+- Perceber que biological pathways se encontram associados à resposta do hospediro ao SARSCoV-2 e à severidade da doença no sentido de eludidar potenciais targets terapêuticos;
+- Prever a severidade da doença e outcome dos pacientes com diagnóstico de COVID-19 com base em dados omicos, clínicos e laboratoriais disponíveis por forma a priorizar doentes e seus tratamentos.
 
 ## 1.2. Dataset
-- Groups:
-    - 102 COVID-19 and 26 non-COVID-19 patient samples
-    - Intensive Care Unit (ICU) and Non-ICU patients
-
+O dataset utilizado consiste dados clínicos recolhidos de 102 doentes com diagnóstico COVID-19 e 26 doentes com dificuldades respiratórias sem diagnóstico COVID-19. Fazem parte deste conjunto de dados, medições provenientes de análises laboratoriais e genómicas realizadas a amostras de sangue recolhidas destes doentes.
+Dos dados clínicos disponíveis fazem parte as seguintes variaveis:
+- internamento em unidade de cuidados intensivos;
+- necessidade de ventilador;
+- scores de severidade da apresentação clínica da doença:
+    - hospital-free days at day 45 (HDF-45), em que é atribuido um score com valor zero a doentes que permaneceram internados mais de 45 dias ou morreram durante a sua estadia no hospital, e valores de score mais elevados a doentes com internamentos hospitalares de menor duração e severidade da doença menor.
+    
 ### 1.2.1. Leukocyte mRNA expression dataset: GEO: GSE157103
     - RNA-seq
     - 13263 transcripts
