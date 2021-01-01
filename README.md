@@ -27,8 +27,8 @@ Medições provenientes de análises laboratoriais:
 
 (verificar se estão todos e descrever sumariamente importancia)
 
--C-reactive protein (CRP), xxx ;
-    -D-dimer, um marcador da degradação do fibrinogénio;
+    - C-reactive protein (CRP), xxx ;
+    - D-dimer, um marcador da degradação do fibrinogénio;
     - ferritina, xxx;
     - lactato, xxx;
     - procalcitonina, xxx;
