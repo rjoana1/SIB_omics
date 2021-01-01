@@ -23,16 +23,13 @@ Dos dados clínicos disponíveis fazem parte as seguintes variáveis:
     - Charlson comorbidity index;
 - número de dias ligado a ventilação mecânica;
 
-Medições provenientes de análises laboratoriais:
-
-(verificar se estão todos e descrever sumariamente importancia)
-
-    - C-reactive protein (CRP), xxx ;
-    - D-dimer, um marcador da degradação do fibrinogénio;
-    - ferritina, xxx;
-    - lactato, xxx;
-    - procalcitonina, xxx;
-    - fibrinogénio, xxx.
+Medições provenientes de análises laboratoriais: (verificar se estão todos e descrever sumariamente importancia)
+- C-reactive protein (CRP), xxx ;
+- D-dimer, um marcador da degradação do fibrinogénio;
+- ferritina, xxx;
+- lactato, xxx;
+- procalcitonina, xxx;
+- fibrinogénio, xxx.
 
 Dados de expressão normalizados (TMP) provenientes de RNA-sequencing (Illumina NovaSeq6000) de amostras de sangue destes doentes. A existência de um número de amostras inferior ao número de doentes (124) deve-se, provavelmente, à exclusão de duas amostras por falta de qualidade.
 
