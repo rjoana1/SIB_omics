@@ -23,13 +23,13 @@ Dos dados clínicos disponíveis fazem parte as seguintes variáveis:
     - Charlson comorbidity index;
 - número de dias ligado a ventilação mecânica;
 
-Medições provenientes de análises laboratoriais: (verificar se estão todos e descrever sumariamente importancia)
-- C-reactive protein (CRP), xxx ;
+Medições provenientes de análises laboratoriais:
+- C-reactive protein (CRP),  ;
 - D-dimer, um marcador da degradação do fibrinogénio;
-- ferritina, xxx;
-- lactato, xxx;
-- procalcitonina, xxx;
-- fibrinogénio, xxx.
+- ferritina, ;
+- lactato, ;
+- procalcitonina, ;
+- fibrinogénio, .
 
 O acesso a estes dados foi conseguido através do package em pyhton GEOparse (https://pypi.org/project/GEOparse/).
 
